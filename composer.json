@@ -1,0 +1,21 @@
+{
+    "name": "home/tiendavirtual",
+    "description": "Descripción de mi proyecto PHP",
+    "type": "project",
+    "license": "MIT",
+    "config" : 
+        {
+            "secure-http": true
+        },
+    "authors": [
+        {
+            "name": "sebastian moreno",
+            "email": "devcolseb@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "fpdf/fpdf": "^1.86",
+        "monolog/monolog": "^2.0"       
+    }
+}
