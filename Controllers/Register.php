@@ -16,22 +16,8 @@ class Register extends Controllers{
         // require_once('./Views/login.php');
     }
 
-               
-    public function insert($usuario, $contrasena) {
-        $query = "INSERT INTO usuarios (usuario, contrasena) VALUES (:usuario, :contrasena)";
-        $statement = $this->conexion->prepare($query);
-        $statement->bindParam(':usuario', $usuario);
-        $statement->bindParam(':contrasena', $contrasena);
-        //return 
-        $statement->execute();
-        if ($statement->execute()) {
-            echo "Usuario $usuario creado con éxito.";
-            
-        } else {
-            echo "Error: " ;
-        }
-        
-    }
+          
+   
 
     
 }
