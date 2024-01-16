@@ -21,7 +21,7 @@
         public function __construct()
         {   
             
-            $this->conexion= new DataBase();
+            $this->conexion= new DataBasev2();
             $this->conexion= $this->conexion->connect();
            
                        
