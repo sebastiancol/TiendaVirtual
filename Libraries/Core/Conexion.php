@@ -2,7 +2,7 @@
 
 class Conexion {
 
-     private $conected;
+    private $conected;
     
     public function __construct() {
         $dsn = "mysql:host={DB_HOST};dbname={DB_NAME};charset={DB_CHARSET}";

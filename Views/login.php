@@ -1,5 +1,5 @@
+<?//php phpinfo()?>
 <?php require_once ('./views/include/header.php');?>
-
 
 <?php 
     //require_once('../models/autoload.php');
