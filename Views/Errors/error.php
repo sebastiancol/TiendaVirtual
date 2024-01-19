@@ -1,4 +1,4 @@
-<?php ?>
+<?php require_once('./views/include/header.php')?>
 
 <div class="row m-5">
 <div class="col-8 mx-auto"> 
@@ -10,3 +10,6 @@
     </div>        
 </div>
 </div>
+
+
+<?php require_once ('./views/include/footer.php');?>

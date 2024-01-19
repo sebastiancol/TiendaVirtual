@@ -1,8 +1,8 @@
 <?php
-    namespace Controller;
-    require_once('../autoload.php');
+    //namespace Controller;
+    //require_once('../autoload.php');
     
-    use models\DataBase;
+    //use models\DataBase;
 
 
 

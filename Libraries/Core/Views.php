@@ -1,14 +1,16 @@
 <?php
 
-    class Views {
-
-        public function getView($controller,$view)
+    class Views 
+    {
+        public function getView($controller,$view,$data="")
         {
             $controller = get_class($controller);
-            if($controller == "Login"){
-                $view = VIEWS.$view.".php";
+            if($controller == "Login" || $controller == "Register" || $controller == "Catalogo" || $controller == "Products"
+            || $controller == "User" )
+            {
+                $view = "Views/".$view.".php";
             }else{
-                $view = VIEWS.$controller."/".$view.".php";
+                $view = "Views/".$controller."/".$view.".php";
                 
             }
             require_once($view);

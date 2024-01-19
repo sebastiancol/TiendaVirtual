@@ -1,15 +1,19 @@
 <?php
-    
+    //use Models;
+
 
     class Login extends Controllers{
+
+        private $product;
 
         public function __construct()
         {
             parent::__construct();
         }
 
-        public function usuario(){
-            //echo "mensaje desde el metodo del controlador";
+        public function login(){
+            $arrdata = $this->model->selectUsers();
+            $this->views->getView($this,"register",$arrdata); 
         }
 
         /*public function carrito($paramns){
@@ -18,12 +22,13 @@
            echo $carrito;
         }*/
 
-        public function main($paramns){
-           $data['data_page']="home"; 
-           $data['data_title']="pagina principal"; 
-           $data['data_name']="home"; 
+        public function main($paramns)
+        {
+           $data['page_id'] = 1; 
+           $data['page_data']="home"; 
+           $data['page_title']="pagina principal"; 
+           $data['page_name']="home"; 
            $this->views->getView($this,"login",$data); 
-           // require_once('./Views/login.php');
         }
 
         
