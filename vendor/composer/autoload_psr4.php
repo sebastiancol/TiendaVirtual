@@ -25,4 +25,5 @@ return array(
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'Fpdf\\' => array($vendorDir . '/fpdf/fpdf/src/Fpdf'),
     'Evenement\\' => array($vendorDir . '/evenement/evenement/src'),
+    'Admin1\\TiendaVirtual\\' => array($baseDir . '/src'),
 );

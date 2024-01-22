@@ -1,22 +1,26 @@
 {
-    "name": "home/tiendavirtual",
+    "name": "admin1/tienda-virtual",
     "description": "Descripción de mi proyecto PHP",
-    "type": "project",
     "license": "MIT",
-    "config" : 
-        {
+    "autoload": {
+        "psr-4": {
+            "Admin1\\TiendaVirtual\\": "src/"
+        }
+    },
+    "config" :  {
             "secure-http": true
-        },
+    },
     "authors": [
         {
             "name": "sebastian moreno",
             "email": "devcolseb@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": "^8.1",
         "fpdf/fpdf": "^1.86",
         "monolog/monolog": "^2.0",
-        "cboden/ratchet": "^0.4.4"       
+        "cboden/ratchet": "^0.4.4"  
     }
 }

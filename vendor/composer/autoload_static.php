@@ -56,6 +56,10 @@ class ComposerStaticInit5369e927769ecdca1e1b01732658c884
         array (
             'Evenement\\' => 10,
         ),
+        'A' => 
+        array (
+            'Admin1\\TiendaVirtual\\' => 21,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -135,6 +139,10 @@ class ComposerStaticInit5369e927769ecdca1e1b01732658c884
         'Evenement\\' => 
         array (
             0 => __DIR__ . '/..' . '/evenement/evenement/src',
+        ),
+        'Admin1\\TiendaVirtual\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 

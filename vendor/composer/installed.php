@@ -3,7 +3,7 @@
         'name' => 'home/tiendavirtual',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '4dc888e6eaa7d15c215ab2ea588d5e46270ff577',
+        'reference' => 'ca586e2d7a59db040e97594b40c5da010a9d2201',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -49,7 +49,7 @@
         'home/tiendavirtual' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '4dc888e6eaa7d15c215ab2ea588d5e46270ff577',
+            'reference' => 'ca586e2d7a59db040e97594b40c5da010a9d2201',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
