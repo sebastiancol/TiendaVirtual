@@ -11,12 +11,11 @@
             return "Datos del carrito N°".$params;
         }*/
 
-        public function selectUsers() {
+        public function getUser() {
           
-            //$sql = "select * from usuarios";
-            $request = $this->getUsers();
+            $sql = "select * from usuarios";
+            $request = $this->select_all($sql);
             return $request;
-            //echo $request;
         }
     }
 ?>

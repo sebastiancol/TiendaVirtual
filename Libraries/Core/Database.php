@@ -4,7 +4,7 @@
     {
 
         private $conexion;
-        private $strongquery;
+        private $strquery;
         private $arrquery;
 
         function __construct()
@@ -28,6 +28,26 @@
             }
             
         }
+
+        //Busca un registro
+		public function select(string $query)
+		{
+			$this->strquery = $query;
+        	$result = $this->conexion->prepare($this->strquery);
+			$result->execute();
+        	$data = $result->fetch(PDO::FETCH_ASSOC);
+        	return $data;
+		}
+        
+		//Devuelve todos los registros
+		public function select_all(string $query)
+		{
+			$this->strquery = $query;
+        	$result = $this->conexion->prepare($this->strquery);
+			$result->execute();
+        	$data = $result->fetchall(PDO::FETCH_ASSOC);
+        	return $data;
+		}
 
         public function obtenerUsuarios($user,$password) {
             $query = "SELECT * FROM usuarios WHERE usuario = :usuario and contrasena = :contrasena";

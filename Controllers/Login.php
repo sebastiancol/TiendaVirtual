@@ -31,6 +31,13 @@
            $this->views->getView($this,"login",$data); 
         }
 
+        public function consultar()
+        {
+            //$data=$user+$pass;
+            $result = $this->model->getUser();
+            dep($result);
+        }     
+
         
     }
 ?>

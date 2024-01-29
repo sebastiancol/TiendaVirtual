@@ -11,6 +11,7 @@ class Register extends Controllers{
     public function main(
         //$paramns
     )
+    
     {
         /*$data['data_page']="home"; 
         $data['data_title']="pagina principal"; 

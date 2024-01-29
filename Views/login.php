@@ -3,8 +3,6 @@
 
 <?php 
     //require_once('../models/autoload.php');
-    
-   
 
     /*if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         session_start();
@@ -30,6 +28,26 @@
     //echo passGenerator();
     //echo date_default_timezone_get();
     //print(count($data));
+
+    
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        //session_start();
+
+        $usuario=$_POST['user'];
+        $password=$_POST['password'];
+
+
+        
+       // $sql = new Login();
+        //$sql->consultar($usuario, $password);
+        /*$loginValidate=$create->insert($usuario, $password);
+        if($loginValidate){
+            echo "Inicio de sesión exitoso";
+        }else{
+            echo "Inicio de sesión invalido";
+        }*/
+        
+    }
 ?>
 
     <div class="row m-5">
@@ -48,9 +66,11 @@
                         </div>
                         <div class="form-group mt-5">
                             <!--<button type="submit" class="btn btn-success btn-block entry" name="save2">INGRESAR</button>-->
+                            <input type="submit" value="INICIAR SESION" class="btn btn-success btn-block entry">
+                            <span><a href="<?php  ?>" class="btn btn-success btn-block entry"></a></span>
                             
-                            <input type="submit" value="Iniciar Sesión" class="btn btn-success btn-block entry">
-                            <span>or <a href="../Register/registrar" class="btn btn-primary btn-block entry">REGISTRAR</a></span>
+                            <!--<input type="submit" value="REGISTRAR" class="btn btn-success btn-block entry">
+                            <span><a href="../Register/registrar" class="btn btn-primary btn-block entry">REGISTRAR</a></span>-->
                             
                         </div>
                     </form>
